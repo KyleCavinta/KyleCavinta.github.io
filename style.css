@@ -1,0 +1,108 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+
+    box-sizing: border-box;
+    font-family: "Orkney", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #1b1b1b;
+}
+
+
+/* Variable */
+
+:root {
+    /* --main-color:#FFF;
+        --body-color:#242424;
+        --container-color:#FFF;
+        --heading-color:#222321; 
+        --box-color:#0d0f26; */
+    --bg-color: #0A192F;
+    --primary-color: #FFFFFF;
+    --a0a0a0-color: #a0a0a0;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+
+.container nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: var(--a0a0a0-color);
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    font-weight: 400;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: #64FFDA;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+.social a::after {
+    opacity: 0;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 250px;
+}
+
+@media screen and (max-width:1024px) {}
+
+@media (max-width: 576px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 180px;
+
+    }
+
+    .social {
+        position: absolute;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: -80px;
+
+        right: 0;
+        left: 0;
+    }
+}
